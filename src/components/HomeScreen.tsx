@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import UI from '../utils/UI';
 
 interface HomeScreenProps {
@@ -29,7 +29,13 @@ export default class HomeScreen extends Component<HomeScreenProps> {
   render() {
     return (
       <View style={styles.root}>
-        <Text>Home Screen(RN)</Text>
+        <Text style={{padding: 20}}>Home Screen(RN)</Text>
+        <TouchableOpacity
+        onPress={() => {
+          UI.openURL('PAYMENT', {});
+        }}>
+          <Text>Open Native screen</Text>
+        </TouchableOpacity>
       </View>
     )
   }

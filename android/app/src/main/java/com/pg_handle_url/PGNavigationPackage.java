@@ -17,6 +17,7 @@ public class PGNavigationPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new PGNavigationModule(reactContext));
+        modules.add(new EventEmitterModule(reactContext));
         return modules;
     }
 

@@ -18,6 +18,10 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* pg_handle_urlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pg_handle_urlTests.m */; };
 		AA92BA1E389287BC2D73F84D /* libPods-pg_handle_urlTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637865874927904AC511F70A /* libPods-pg_handle_urlTests.a */; };
+		AC0110E723F6963D00777473 /* PGNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0110E623F6963D00777473 /* PGNavigation.m */; };
+		AC0110EB23F69AAB00777473 /* EventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0110EA23F69AAB00777473 /* EventEmitter.m */; };
+		AC0110F223F6A3B700777473 /* PaymentScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0110F023F6A3B700777473 /* PaymentScreen.m */; };
+		AC0110F323F6A3B700777473 /* PaymentScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0110F123F6A3B700777473 /* PaymentScreen.xib */; };
 		F2F9AA24084960D37DADE08C /* libPods-pg_handle_url-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51539EC462402B6027B7C197 /* libPods-pg_handle_url-tvOS.a */; };
 		F446C5BE0B580C93B238E6DD /* libPods-pg_handle_url.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C037C77C439BC2C0D350F66D /* libPods-pg_handle_url.a */; };
 /* End PBXBuildFile section */
@@ -61,6 +65,13 @@
 		7699B8AB2FBEC0D3524CD271 /* Pods-pg_handle_url.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pg_handle_url.debug.xcconfig"; path = "Target Support Files/Pods-pg_handle_url/Pods-pg_handle_url.debug.xcconfig"; sourceTree = "<group>"; };
 		867E77D0EA37B609CB32134D /* Pods-pg_handle_url-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pg_handle_url-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-pg_handle_url-tvOSTests/Pods-pg_handle_url-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3E3A7E800321845A8E97579 /* Pods-pg_handle_url-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pg_handle_url-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-pg_handle_url-tvOSTests/Pods-pg_handle_url-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0110E623F6963D00777473 /* PGNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGNavigation.m; sourceTree = "<group>"; };
+		AC0110E823F6965C00777473 /* PGNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGNavigation.h; sourceTree = "<group>"; };
+		AC0110E923F69A8C00777473 /* EventEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventEmitter.h; sourceTree = "<group>"; };
+		AC0110EA23F69AAB00777473 /* EventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventEmitter.m; sourceTree = "<group>"; };
+		AC0110EF23F6A3B700777473 /* PaymentScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentScreen.h; sourceTree = "<group>"; };
+		AC0110F023F6A3B700777473 /* PaymentScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentScreen.m; sourceTree = "<group>"; };
+		AC0110F123F6A3B700777473 /* PaymentScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentScreen.xib; sourceTree = "<group>"; };
 		AC1D693F23F647B100B9107E /* pg_handle_url.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = pg_handle_url.entitlements; path = pg_handle_url/pg_handle_url.entitlements; sourceTree = "<group>"; };
 		C037C77C439BC2C0D350F66D /* libPods-pg_handle_url.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pg_handle_url.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7825836AFF7653CD36AB6B /* Pods-pg_handle_url-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pg_handle_url-tvOS.release.xcconfig"; path = "Target Support Files/Pods-pg_handle_url-tvOS/Pods-pg_handle_url-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +145,13 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				AC0110E623F6963D00777473 /* PGNavigation.m */,
+				AC0110E823F6965C00777473 /* PGNavigation.h */,
+				AC0110E923F69A8C00777473 /* EventEmitter.h */,
+				AC0110EA23F69AAB00777473 /* EventEmitter.m */,
+				AC0110EF23F6A3B700777473 /* PaymentScreen.h */,
+				AC0110F023F6A3B700777473 /* PaymentScreen.m */,
+				AC0110F123F6A3B700777473 /* PaymentScreen.xib */,
 			);
 			name = pg_handle_url;
 			sourceTree = "<group>";
@@ -342,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0110F323F6A3B700777473 /* PaymentScreen.xib in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -535,6 +554,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				AC0110F223F6A3B700777473 /* PaymentScreen.m in Sources */,
+				AC0110EB23F69AAB00777473 /* EventEmitter.m in Sources */,
+				AC0110E723F6963D00777473 /* PGNavigation.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

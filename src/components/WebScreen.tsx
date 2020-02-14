@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { CompatNavigationProp } from '@react-navigation/compat';
+// import { useNavigation } from '@react-navigation/native';
+// import { CompatNavigationProp } from '@react-navigation/compat';
 import { WebView } from 'react-native-webview';
 
 interface WebScreenProps {

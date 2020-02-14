@@ -11,13 +11,18 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <React/RCTLinkingManager.h>
+#import "PaymentScreen.h"
+
+@interface AppDelegate()
+@property(nonatomic, strong) UINavigationController *navigationController;
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
+  self.reactBridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:self.reactBridge
                                                    moduleName:@"pg_handle_url"
                                             initialProperties:nil];
 
@@ -26,7 +31,8 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
-  self.window.rootViewController = rootViewController;
+  _navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+  self.window.rootViewController = _navigationController;
   [self.window makeKeyAndVisible];
   return YES;
 }
@@ -46,5 +52,18 @@
 {
   return [RCTLinkingManager application:application openURL:url options:options];
 }
+
+- (void) navigateToView
+{
+  NSLog(@"navigateToView");
+  PaymentScreen *paymentControler = [[PaymentScreen alloc] initWithNibName:@"PaymentScreen" bundle:nil];
+  [_navigationController pushViewController:paymentControler animated:YES];
+}
+
+- (void) navigationBack
+{
+  [_navigationController popViewControllerAnimated:YES];
+}
+
 
 @end

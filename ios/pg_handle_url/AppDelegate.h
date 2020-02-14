@@ -11,5 +11,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, strong) RCTBridge *reactBridge;
+
+- (void) navigateToView;
+- (void) navigationBack;
 
 @end

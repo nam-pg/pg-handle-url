@@ -23,7 +23,7 @@ export default class WebScreen extends Component<WebScreenProps> {
         <Text>Params:</Text>
         <Text>{JSON.stringify(this.props.route)}</Text>
         <WebView style={styles.root}
-          source={{ uri: params.uri }}
+          source={{ uri: decodeURIComponent(params.uri) }}
           />
       </View>
     )

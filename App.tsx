@@ -16,7 +16,7 @@ export default function App() {
     prefixes: ['https://nam-pg.github.io', 'nam-pg://'],
     config: {
       Home: {
-        path: 'Home/:id'
+        path: 'Home/:name'
       },
       Web: {
         path: 'Web/:uri'

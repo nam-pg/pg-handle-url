@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import { View, StyleSheet, Text } from 'react-native';
+import UI from '../utils/UI';
 
 interface HomeScreenProps {
   route: {
     params: {
-      id: string
+      name: string
     }
   },
 }
@@ -12,6 +13,17 @@ interface HomeScreenProps {
 export default class HomeScreen extends Component<HomeScreenProps> {
   constructor(props: HomeScreenProps) {
     super(props);
+  }
+
+  componentDidMount(){
+    this.handleUrl();
+  }
+
+  handleUrl = () => {
+    const { route: { params } } = this.props;
+    if (params instanceof Object && params.name) {
+      UI.openURL(params.name, {});
+    }
   }
 
   render() {

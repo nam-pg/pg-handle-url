@@ -5,12 +5,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import NavigationService from './src/utils/NavigationService';
 import ListScreen from './src/components/ListScreen';
-import { Alert } from 'react-native';
 
 const AppStack = createStackNavigator();
 
 export default function App() {
-  Alert.alert("lkjasldk", "asdasd");
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{flex: 1}}>

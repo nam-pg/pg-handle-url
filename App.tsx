@@ -7,12 +7,14 @@ import NavigationService from './src/utils/NavigationService';
 import HomeScreen from './src/components/HomeScreen';
 import WebScreen from './src/components/WebScreen';
 import ListScreen from './src/components/ListScreen';
-import { firebase } from '@react-native-firebase/dynamic-links';
+import DynamicLinks, { firebase } from '@react-native-firebase/dynamic-links';
 import UI from './src/utils/UI';
 
 const AppStack = createStackNavigator();
 
 export default function App() {
+
+  DynamicLinks().getInitialLink().then(UI.parserUrl);
   React.useEffect(() => {
     const unsubscribe = firebase.dynamicLinks().onLink(UI.parserUrl);
     // When the is component unmounted, remove the listener

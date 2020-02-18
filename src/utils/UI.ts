@@ -33,6 +33,7 @@ class UI {
   }
 
   parserUrl(links: any) {
+    console.log("Links", links)
     if (links instanceof Object && links.url) {
       const { url, query } = QString.parseUrl(links.url);
       this.openURL(upperCase(url.split('/').pop()), query);

@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import React, {Component,} from 'react';
+import { View, StyleSheet, Text, AppRegistry } from 'react-native';
 
 interface ListScreenProps {
   route: {
@@ -30,3 +30,5 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   }
 })
+
+AppRegistry.registerComponent('ListApp', () => ListScreen);

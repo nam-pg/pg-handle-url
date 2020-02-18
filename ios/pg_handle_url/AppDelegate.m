@@ -60,6 +60,15 @@
   [_navigationController pushViewController:paymentControler animated:YES];
 }
 
+- (void) navigateToListView
+{
+  UIViewController *listAppCtr = [UIViewController new];
+  listAppCtr.view = [[RCTRootView alloc] initWithBridge:self.reactBridge moduleName:@"ListApp" initialProperties:nil];
+  
+  [_navigationController pushViewController:listAppCtr animated:YES];
+}
+
+
 - (void) navigationBack
 {
   [_navigationController popViewControllerAnimated:YES];

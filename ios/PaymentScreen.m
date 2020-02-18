@@ -23,18 +23,8 @@
   return (AppDelegate *) [UIApplication sharedApplication].delegate;
 }
 
-- (IBAction)btnGoback:(id)sender {
-  [self.appDelegate navigationBack];
-}
-
-- (IBAction)btnGobackToWeb:(id)sender {
- 
-  RCTBridge *reactBridge = [self.appDelegate reactBridge];
-   NSLog(@"reactBridge %@", reactBridge.bundleURL);
-  EventEmitter *eventEmitter = [reactBridge moduleForName:@"EventEmitter"];
-   NSLog(@"btnGobackToWeb %@", eventEmitter);
-  [eventEmitter emitEvent:@"WEB"];
-  [self.appDelegate navigationBack];
+- (IBAction)btnGoToListView:(id)sender {
+  [self.appDelegate navigateToListView];
 }
 
 //- (void)awakeFromNib {

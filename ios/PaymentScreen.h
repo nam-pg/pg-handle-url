@@ -13,8 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PaymentScreen : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *btnGoback;
-@property (weak, nonatomic) IBOutlet UIButton *btnGobackToWeb;
+@property (weak, nonatomic) IBOutlet UIButton *btnGoToListView;
 
 @end
 

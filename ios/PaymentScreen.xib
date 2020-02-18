@@ -10,8 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentScreen">
             <connections>
-                <outlet property="btnGoback" destination="dfn-bk-zVq" id="a84-CL-qoB"/>
-                <outlet property="btnGobackToWeb" destination="A02-QG-DYj" id="VyN-Wi-Bzh"/>
+                <outlet property="btnGoToListView" destination="A02-QG-DYj" id="Oxo-t8-mFS"/>
                 <outlet property="view" destination="w8B-VF-EyR" id="KjO-wK-aTP"/>
             </connections>
         </placeholder>
@@ -20,20 +19,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dfn-bk-zVq">
-                    <rect key="frame" x="174" y="344" width="57" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A02-QG-DYj" userLabel="Btn Go To ListApp">
+                    <rect key="frame" x="155" y="397" width="105" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Go back"/>
+                    <state key="normal" title="ListApp Screen"/>
                     <connections>
-                        <action selector="btnGoback:" destination="-1" eventType="touchUpInside" id="Dmp-zE-qsm"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A02-QG-DYj">
-                    <rect key="frame" x="128" y="397" width="158" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Go back to web screen"/>
-                    <connections>
-                        <action selector="btnGobackToWeb:" destination="-1" eventType="touchUpInside" id="gA0-Z4-iCI"/>
+                        <action selector="btnGoToListView:" destination="-1" eventType="touchUpInside" id="mGz-tX-Ie9"/>
                     </connections>
                 </button>
             </subviews>

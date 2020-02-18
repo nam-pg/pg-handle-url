@@ -15,5 +15,6 @@
 
 - (void) navigateToView;
 - (void) navigationBack;
+- (void) navigateToListView;
 
 @end

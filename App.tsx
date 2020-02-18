@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import NavigationService from './src/utils/NavigationService';
 import HomeScreen from './src/components/HomeScreen';
 import WebScreen from './src/components/WebScreen';
+import ListScreen from './src/components/ListScreen';
 
 const AppStack = createStackNavigator();
 
@@ -50,6 +51,7 @@ export default function App() {
         <AppStack.Navigator headerMode='none' initialRouteName="Home">
           <AppStack.Screen name="Home" component={HomeScreen}/>
           <AppStack.Screen name="Web" component={WebScreen}/>
+          <AppStack.Screen name="List" component={ListScreen}/>
         </AppStack.Navigator>
       </NavigationContainer>
       </SafeAreaView>

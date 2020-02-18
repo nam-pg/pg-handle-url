@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FIREBASE_ANALYTICS_COLLECTION_ENABLED</key>
+	<true/>
+	<key>CLIENT_ID</key>
+	<string>236091375308-0pukm2q357o8hqmmd15uc5g77lbvoc6f.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.236091375308-0pukm2q357o8hqmmd15uc5g77lbvoc6f</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAIj6oE2reUL9XmixT6TuuKqnW-w0Y5B90</string>
+	<key>GCM_SENDER_ID</key>
+	<string>236091375308</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.pg.handle.url</string>
+	<key>PROJECT_ID</key>
+	<string>pghandleurl</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pghandleurl.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:236091375308:ios:d0486ddc04b04e1683cc69</string>
+	<key>DATABASE_URL</key>
+	<string>https://pghandleurl.firebaseio.com</string>
+</dict>
+</plist>

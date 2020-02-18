@@ -40,9 +40,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data
-                    android:host="nam-pg.github.io"
-                    android:scheme="https" />
+                <data android:host="pgnam.page.link" android:scheme="https" />
             </intent-filter>
         </activity>
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />

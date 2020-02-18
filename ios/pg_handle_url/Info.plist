@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>nam-pg</string>
+			<string>org.pg.handle.url</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>nam-pg</string>
+				<string>org.pg.handle.url</string>
 			</array>
 		</dict>
 	</array>

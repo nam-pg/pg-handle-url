@@ -12,6 +12,7 @@
 #import <React/RCTRootView.h>
 #import <React/RCTLinkingManager.h>
 #import "PaymentScreen.h"
+@import Firebase;
 
 @interface AppDelegate()
 @property(nonatomic, strong) UINavigationController *navigationController;
@@ -34,6 +35,7 @@
   _navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
   self.window.rootViewController = _navigationController;
   [self.window makeKeyAndVisible];
+  [FIRApp configure];
   return YES;
 }
 

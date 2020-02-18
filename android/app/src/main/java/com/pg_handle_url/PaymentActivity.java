@@ -12,31 +12,28 @@ public class PaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Button btnGoback;
-        Button btnGobackToWebScreen;
+        Button btnGoToList;
+        Button btnGoToDash;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_native);
 
-        btnGoback = findViewById(R.id.btnGoBack);
-        btnGobackToWebScreen = findViewById(R.id.btnGobackWebScreen);
+        btnGoToList = findViewById(R.id.btnGoToList);
+        btnGoToDash = findViewById(R.id.btnGoToDash);
 
-        btnGoback.setOnClickListener(new View.OnClickListener() {
+
+        btnGoToList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.putExtra("OPEN_SCREEN", "HOME");
-                setResult(Activity.RESULT_OK, intent);
-                finish();
+                Intent a = new Intent(PaymentActivity.this, MainActivity2.class);
+                startActivity(a);
             }
         });
 
-        btnGobackToWebScreen.setOnClickListener(new View.OnClickListener() {
+        btnGoToDash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.putExtra("OPEN_SCREEN", "WEB");
-                setResult(Activity.RESULT_OK, intent);
-                finish();
+                Intent a = new Intent(PaymentActivity.this, Dashboard.class);
+                startActivity(a);
             }
         });
 

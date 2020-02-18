@@ -1,9 +1,7 @@
-import {NativeModules, NativeEventEmitter} from 'react-native';
+import {NativeModules} from 'react-native';
 import NavigationService from './NavigationService';
-const eventEmitterModule = NativeModules.EventEmitter;
 
 class UI {
-  eventEmitter = new NativeEventEmitter(eventEmitterModule);
   openURL(path: string, data: any) {
     switch (path) {
       case 'HOME': {
@@ -15,19 +13,16 @@ class UI {
         NativeModules.PGNavigation.navigate('Payment');
         break;
       }
-
+      case 'DASH': {
+        NativeModules.PGNavigation.navigate('Dashboard');
+        break;
+      }
       case 'WEB': {
         console.log('openUrl web');
         NavigationService.navigate('Web', data);
         break;
       }
     }
-  }
-
-  constructor() {
-    this.eventEmitter.addListener(eventEmitterModule.MyEventName, params => {
-      this.openURL(params, { uri: 'https://nam-pg.github.io' });
-    });
   }
 }
 

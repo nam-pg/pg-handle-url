@@ -19,16 +19,16 @@
             android:textAlignment="center" />
 
         <Button
-            android:id="@+id/btnGoBack"
+            android:id="@+id/btnGoToList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Go Back" />
+            android:text="List screen" />
 
         <Button
-            android:id="@+id/btnGobackWebScreen"
+            android:id="@+id/btnGoToDash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Go back to web screen" />
+            android:text="Dashboard screen" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

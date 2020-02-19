@@ -1,12 +1,14 @@
 import React from 'react';
 import 'react-native-gesture-handler';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import { Linking } from 'react-native';
 import { NavigationContainer, useLinking } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import NavigationService from './src/utils/NavigationService';
 import HomeScreen from './src/components/HomeScreen';
 import WebScreen from './src/components/WebScreen';
 import ListScreen from './src/components/ListScreen';
+import UI from './src/utils/UI';
 
 const AppStack = createStackNavigator();
 
@@ -22,7 +24,7 @@ export default function App() {
       Web: {
         path: 'Web/:uri'
       }
-    }
+    },
   });
 
   const [isReady, setIsReady] = React.useState(false);
@@ -38,6 +40,13 @@ export default function App() {
         setIsReady(true);
       });
   }, [getInitialState]);
+
+  React.useEffect(() => {
+    Linking.addEventListener('url', UI.parserUrl);
+   return () => {
+     Linking.removeEventListener('url', UI.parserUrl);
+   };
+  }, []);
 
   if (!isReady) {
     return null;
